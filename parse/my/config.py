@@ -21,3 +21,4 @@ class Config(BaseModel):
         description="Метод записи"
     )
     
+
