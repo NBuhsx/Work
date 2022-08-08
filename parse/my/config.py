@@ -16,7 +16,7 @@ class Config(BaseModel):
     data_to: str = Field(
         default=datetime.now().strftime("%m.%Y"),
         description="Дата окончания отсчёта")
-    method_write: Literal['json', 'csv'] = Field(
+    method_write: Literal['json', 'csv', 'all'] = Field(
         default='json',
         description="Метод записи"
     )

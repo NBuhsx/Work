@@ -29,5 +29,5 @@ def return_tr(context:str) -> Generator[List[str], None, None]:
     table = page.find('table', class_='data spaced')
     for row in table.find_all('tr')[3:]:
         yield [
-            value.get_text() for value in row.contents if value != '\n'
+            value.get_text().strip() for value in row.contents if value != '\n'
         ]

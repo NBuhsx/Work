@@ -20,7 +20,8 @@
       "default": "json",
       "enum": [
         "json",
-        "csv"
+        "csv",
+        "all"
       ],
       "type": "string"
     }

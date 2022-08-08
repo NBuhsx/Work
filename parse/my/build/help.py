@@ -11,7 +11,7 @@ class ColumName:
     monetary_gold:str = 'монетарное золото'
 
     @classmethod
-    def get_dict(cls, 
+    def as_dict(cls, 
         data: str, 
         inter_reserves: str, 
         currency_reserves: str,
@@ -34,7 +34,7 @@ class ColumName:
         }
 
     @classmethod
-    def get_tuple(cls) -> Tuple[str, ...]:
+    def as_title(cls) -> Tuple[str, ...]:
         return (
             cls.data,
             cls.inter_reserves,
@@ -43,4 +43,3 @@ class ColumName:
             cls.sdr_account,
             cls.position_imf,
             cls.monetary_gold)
-

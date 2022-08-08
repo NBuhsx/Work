@@ -7,8 +7,6 @@ from json_schema_for_humans.generate import generate_from_filename
 DIR = Path(Path(__file__).resolve().parent, 'schema')
 
 
-
-
 def generate_html():
     with open(Path(DIR, 'SchemaConfig.json'), mode='w') as file:
         file.write(Config.schema_json(indent=2))
