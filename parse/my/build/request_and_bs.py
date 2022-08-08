@@ -3,9 +3,7 @@ from bs4 import BeautifulSoup
 
 from datetime import datetime
 from typing import Generator, List
-
 from datetime import datetime
-
 
 
 def parse_table_in_data(

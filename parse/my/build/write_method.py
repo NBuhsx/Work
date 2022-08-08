@@ -1,4 +1,3 @@
-from collections.abc import Iterator
 import json
 from typing import Generator, List, Iterator
 from pathlib import Path
